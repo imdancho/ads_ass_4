@@ -53,7 +53,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1684083020157</updated>
-      <workItem from="1684083021354" duration="5506000" />
+      <workItem from="1684083021354" duration="6045000" />
     </task>
     <task id="LOCAL-00001" summary="ads_ass_4">
       <created>1684083355084</created>
@@ -97,11 +97,29 @@
       <option name="project" value="LOCAL" />
       <updated>1684088128408</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="ads_ass_4">
+      <created>1684089464875</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1684089464875</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ads_ass_4" />

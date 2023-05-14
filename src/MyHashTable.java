@@ -31,5 +31,16 @@ public class MyHashTable<K, V> {
         return Math.abs(result);
     }
 
+    public void put(K key, V value) {
+        int bucket = hash(key);
+        HashNode<K, V> newNode = new HashNode<>(key, value);
+
+        if (chainArray[bucket] != null) {
+            newNode.next = chainArray[bucket];
+        }
+        chainArray[bucket] = newNode;
+        size++;
+    }
+
 
 }
