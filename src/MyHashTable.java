@@ -13,4 +13,11 @@ public class MyHashTable<K, V> {
         }
     }
 
+    private HashNode<K, V>[] chainArray; // or Object[]
+    private int M = 11; // default number of chains
+    private int size;
+
+
+
+
 }
