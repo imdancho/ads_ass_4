@@ -52,5 +52,24 @@ public class MyHashTable<K, V> {
         return null;
     }
 
+    public V remove(K key) {
+        int bucket = hash(key);
+        HashNode<K, V> currentNode = chainArray[bucket];
+        HashNode<K, V> previousNode = null;
+        while (currentNode != null) {
+            if (currentNode.key == key) {
+                if (previousNode == null)
+                    chainArray[bucket] = currentNode.next;
+                else
+                    previousNode.next = currentNode.next;
+                size--;
+                return currentNode.value;
+            }
+            previousNode = currentNode;
+            currentNode = currentNode.next;
+        }
+        return null;
+    }
+
 
 }
