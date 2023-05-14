@@ -24,7 +24,10 @@ public class MyHashTable<K, V> {
         this.M = M;
     }
 
+    private int hash(K key) {
 
+        return 0;
+    }
 
 
 }
