@@ -35,11 +35,21 @@ public class MyHashTable<K, V> {
         int bucket = hash(key);
         HashNode<K, V> newNode = new HashNode<>(key, value);
 
-        if (chainArray[bucket] != null) {
+        if (chainArray[bucket] != null)
             newNode.next = chainArray[bucket];
-        }
         chainArray[bucket] = newNode;
         size++;
+    }
+
+    public V get(K key) {
+        int bucket = hash(key);
+        HashNode<K, V> currentNode = chainArray[bucket];
+        while (currentNode != null) {
+            if (currentNode.key == key)
+                return currentNode.value;
+            currentNode = currentNode.next;
+        }
+        return null;
     }
 
 
