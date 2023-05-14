@@ -25,8 +25,10 @@ public class MyHashTable<K, V> {
     }
 
     private int hash(K key) {
-
-        return 0;
+        int keyHash = key.hashCode();
+        int result = 1;
+        result = (37 * result + keyHash) % M;
+        return Math.abs(result);
     }
 
 
