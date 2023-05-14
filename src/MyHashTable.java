@@ -17,6 +17,10 @@ public class MyHashTable<K, V> {
     private int M = 11; // default number of chains
     private int size;
 
+    public MyHashTable() {
+    }
+
+
 
 
 
