@@ -20,6 +20,9 @@ public class MyHashTable<K, V> {
     public MyHashTable() {
     }
 
+    public MyHashTable(int M) {
+        this.M = M;
+    }
 
 
 

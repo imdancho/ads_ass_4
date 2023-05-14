@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ae3a5ee0-0eb9-460f-9d4c-03f0e3dc7bd4" name="Changes" comment="ads_ass_4">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyHashTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyHashTable.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -53,7 +52,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1684083020157</updated>
-      <workItem from="1684083021354" duration="3994000" />
+      <workItem from="1684083021354" duration="4025000" />
     </task>
     <task id="LOCAL-00001" summary="ads_ass_4">
       <created>1684083355084</created>
@@ -69,7 +68,21 @@
       <option name="project" value="LOCAL" />
       <updated>1684084919309</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="ads_ass_4">
+      <created>1684087942807</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1684087942807</updated>
+    </task>
+    <task id="LOCAL-00004" summary="ads_ass_4">
+      <created>1684087954385</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1684087954385</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
