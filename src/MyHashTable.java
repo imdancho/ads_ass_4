@@ -71,7 +71,7 @@ public class MyHashTable<K, V> {
         return null;
     }
 
-    public boolean contains(V value) {
+    public boolean containsValue(V value) {
         HashNode<K, V> currentNode;
         for (int i = 0; i < chainArray.length; i++) {
             currentNode = chainArray[i];
@@ -97,5 +97,47 @@ public class MyHashTable<K, V> {
         return null;
     }
 
+    public boolean containsKey(K key) {
+        HashNode<K, V> currentNode;
+        for (int i = 0; i < chainArray.length; i++) {
+            currentNode = chainArray[i];
 
+            while (currentNode != null) {
+
+                if (currentNode.key.equals(key))
+                    return true;
+                currentNode = currentNode.next;
+
+            }
+        }
+        return false;
+    }
+
+    public void resize() {
+        int new_M=2*M;
+        HashNode<K,V>[] newChainArray=new HashNode[new_M];
+
+        for (int i=0;i<M;i++) {
+            HashNode<K,V> currentNode=chainArray[i];
+
+            while (currentNode!=null) {
+                int new_Index=hash(currentNode.key)% new_M;
+                HashNode<K,V> newNode=new HashNode<>(currentNode.key,currentNode.value);
+                if (newChainArray[new_Index]==null)
+                    newChainArray[new_Index]=newNode;
+
+                else {
+                    HashNode<K,V> current=newChainArray[new_Index];
+
+                    while (current.next!=null) {
+                        current=current.next;
+
+                    }
+                    current.next=newNode;
+                }
+                currentNode=currentNode.next;
+            }
+        }
+
+    }
 }
